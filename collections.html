@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBANFIT - Collections</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- OFFER BAR -->
+    <div class="offer-bar" id="offerBar">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first Order
+            <i id="offerClose" class="fa-solid fa-xmark"></i>
+        </p>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h1 class="navbar-title">URBANFIT</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collections.html" class="active">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="navbar-menu-toggle">
+            <i id="sideNavbarActivate" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- SIDE NAVBAR (Mobile) -->
+    <div class="side-navbar" id="sideNavbar">
+        <p class="side-navbar-close"><i id="sideNavbarClose" class="fa-solid fa-xmark"></i></p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1 class="page-title">Collections</h1>
+
+        <div class="collections-layout">
+
+            <!-- FILTER SECTION -->
+            <div class="filter-section">
+                <h3 class="filter-heading">Occasion</h3>
+                <label><input type="checkbox" name="tag" value="summer"> Summer</label>
+                <label><input type="checkbox" name="tag" value="party"> Party</label>
+                <label><input type="checkbox" name="tag" value="beach"> Beach</label>
+
+                <h3 class="filter-heading">Colors</h3>
+                <label><input type="checkbox" name="tag" value="red"> Red</label>
+                <label><input type="checkbox" name="tag" value="blue"> Blue</label>
+                <label><input type="checkbox" name="tag" value="white"> White</label>
+                <label><input type="checkbox" name="tag" value="green"> Green</label>
+
+                <h3 class="filter-heading">Arrivals</h3>
+                <label><input type="checkbox" name="tag" value="new"> New</label>
+                <label><input type="checkbox" name="tag" value="old"> Old</label>
+
+                <button class="clear-filter-btn" id="clearFilter">Clear Filters</button>
+            </div>
+
+            <!-- PRODUCT SECTION -->
+            <div class="product-section">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <p class="result-count" id="resultCount"></p>
+
+                <div class="products-grid" id="productsContainer"></div>
+            </div>
+
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="section news">
+            <h2>Join our Newsletter</h2>
+            <p>Signup for our email newsletter to get exclusive discounts, updates, and more</p>
+            <div>
+                <input type="email" class="search-input" placeholder="Enter your email">
+            </div>
+            <div>
+                <button>Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>URBANFIT</h2>
+                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+        <p class="footer-subtitle">&copy; 2026 URBANFIT.com</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

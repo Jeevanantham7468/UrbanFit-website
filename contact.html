@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBANFIT - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- OFFER BAR -->
+    <div class="offer-bar" id="offerBar">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first Order
+            <i id="offerClose" class="fa-solid fa-xmark"></i>
+        </p>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h1 class="navbar-title">URBANFIT</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html" class="active">Contact Us</a></p>
+        </div>
+        <div class="navbar-menu-toggle">
+            <i id="sideNavbarActivate" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- SIDE NAVBAR (Mobile) -->
+    <div class="side-navbar" id="sideNavbar">
+        <p class="side-navbar-close"><i id="sideNavbarClose" class="fa-solid fa-xmark"></i></p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1 class="page-title">Contact Us</h1>
+
+        <div class="contact-layout">
+
+            <!-- CONTACT INFO -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p class="contact-description">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Our Store</h4>
+                        <p>123 Chennai Street, Tamil Nadu, TN 600001</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p>+91 8925687468</p>
+                    </div>
+                </div>
+
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>support@urbanfit.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h4>Working Hours</h4>
+                        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div class="contact-form-container">
+                <h2>Send us a Message</h2>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="">Select a subject</option>
+                            <option value="order">Order Support</option>
+                            <option value="product">Product Question</option>
+                            <option value="returns">Returns & Refunds</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <span class="success-message" id="formSuccess"></span>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>URBANFIT</h2>
+                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+        <p class="footer-subtitle">&copy; 2026 URBANFIT.com</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
