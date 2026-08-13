@@ -1,4 +1,3 @@
-# UrbanFit-website
 # 👕 UrbanFit – Clothing Website
 
 A modern and responsive **clothing website frontend** built to showcase trendy fashion collections with a clean and user-friendly design.
